@@ -4,7 +4,7 @@
     {
         public string Username { get; set; }
         public string EmailAddress { get; set; }
-        public Country HomeCountry { get; set; }
+        public Country? HomeCountry { get; set; }
 
         public Player(string username, string emailAddress, Country homeCountry)
         {

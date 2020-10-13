@@ -17,7 +17,7 @@ namespace NetCoreTests
         [Test]
         public void CreateMyDictionaryInstance()
         {
-            var dictionary = new MyDictionary<string?, string?>();
+            var dictionary = new MyDictionary<string, string?>();
         }
 
         [Test]

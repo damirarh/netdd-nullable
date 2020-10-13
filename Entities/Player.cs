@@ -1,14 +1,17 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Entities
+﻿namespace Entities
 {
     public class Player
     {
         public int Id { get; set; }
-        [Required]
         public string Username { get; set; }
-        [Required]
         public string EmailAddress { get; set; }
-        public Country HomeCountry { get; set; }
+        public Country? HomeCountry { get; set; }
+
+        public Player(int id, string username, string emailAddress)
+        {
+            Id = id;
+            Username = username;
+            EmailAddress = emailAddress;
+        }
     }
 }

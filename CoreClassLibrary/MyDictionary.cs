@@ -2,7 +2,7 @@
 
 namespace CoreClassLibrary
 {
-    public class MyDictionary<TKey, TValue> : Dictionary<TKey, TValue>
+    public class MyDictionary<TKey, TValue> : Dictionary<TKey, TValue> where TKey: notnull
     {
     }
 }
